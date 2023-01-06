@@ -1,0 +1,174 @@
+#layout {
+    max-width: 720px;
+    margin: 1em;
+}
+
+.container {
+    border: solid 2px red;
+    background: blue;
+    max-width: 44em;
+    font-size: 52px;
+    font-family: "Lato";
+    padding-bottom: 1em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0.15em 0 0.1em 0;
+    color: #ff2222;
+    -webkit-text-stroke: 0.03em black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    height: 12em;
+    padding: 0;
+}
+
+li {
+    height: 33.3333%;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:nth-child(3n) {
+    padding-right: 1.5em;
+    width: 31%;
+}
+
+li:nth-child(3n + 1) {
+    padding-left: 1.5em;
+    width: 40%;
+}
+
+li:nth-child(3n + 2) {
+    width: 29%;
+}
+
+li > div {
+    display: flex;
+    align-items: center;
+}
+
+li > div:last-child {
+    font-size: 1.4em;
+    color: white;
+    -webkit-text-stroke: 0.06em black;
+}
+
+span {
+    color: red;
+    -webkit-text-stroke: 0.06em black;
+}
+
+.rowNumber {
+    font-size: 0.85em;
+}
+
+.iCherry, .iSeven, .iBAR, .i2xBAR, .i3xBAR, .iAnyBAR {
+    display: block;
+    width: 2.25em;
+    height: 2.25em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.iBAR, .i2xBAR, .i3xBAR {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.i2xBAR {
+    position: relative;
+    top: 0.05em;
+}
+
+.iBAR {
+    position: relative;
+    top: 0.15em;
+}
+
+i:last-of-type {
+    margin-right: 0.5em;
+}
+
+.iCherry {
+    background-image: url("./assets/Cherry.png");
+    background-size: 125%;
+}
+
+.iSeven {
+    background-image: url("./assets/7.png");
+}
+
+.iBAR {
+    background-image: url("./assets/BAR.png");
+    background-size: 115%;
+}
+
+.i2xBAR {
+    background-image: url("./assets/2xBAR.png");
+    background-size: 115%;
+}
+
+.i3xBAR {
+    background-image: url("./assets/3xBAR.png");
+    background-size: 115%;
+}
+
+.iAnyBAR {
+    text-align: center;
+    background-image: url("./assets/BAR.png");
+    background-position: center 0.6em;
+}
+
+.iAnyBAR:before {
+    -webkit-text-stroke: 0.06em black;
+    color: red;
+    font-size: 0.75em;
+    content: "ANY";
+    font-style: normal;
+}
+
+.iCherryOrSeven {
+    display: block;
+    font-size: 1.33em;
+    position: relative;
+    left: -0.4em;
+    width: 2em;
+    white-space: nowrap;
+}
+
+.iCherryOrSeven b {
+    position: relative;
+    left: -0.1em;
+    top: -0.05em;
+}
+
+.iCherryOrSeven i {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.iCherryOrSeven i:first-child {
+    left: 0.4em;
+    top: -0.5em;
+    font-size: 0.5em;
+    background-size: 115%;
+}
+
+.iCherryOrSeven i:last-child {
+    font-size: 0.4em;
+    left: -0.45em;
+    top: 1em;
+}

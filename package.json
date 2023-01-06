@@ -1,0 +1,35 @@
+{
+    "name": "drv-test",
+    "author": {
+        "name": "Andrei Monkin",
+        "email": "monkin.andrey@gmail.com"
+    },
+    "dependencies": {
+        "babel-core": "6.26.3",
+        "babel-polyfill": "6.26.0",
+        "babylonjs": "4.0.3",
+        "babylonjs-loaders": "4.0.3",
+        "lodash-es": "4.17.15",
+        "pepjs": "0.5.2",
+        "react": "16.8.6",
+        "react-dom": "16.8.6",
+        "react-redux": "7.1.0",
+        "rebylon": "1.0.10",
+        "redux": "4.0.4",
+        "redux-devtools-extension": "2.13.8",
+        "reselect": "4.0.0",
+        "typesafe-actions": "4.4.2",
+        "@material-ui/core": "4.3.0"
+    },
+    "devDependencies": {
+        "@types/lodash-es": "4.17.3",
+        "@types/react-dom": "16.8.5",
+        "@types/react-redux": "7.1.1",
+        "parcel": "2.8.1",
+        "typescript": "3.5.3"
+    },
+    "scripts": {
+        "build": "parcel build src/index.html --public-url ./",
+        "start": "parcel src/index.html"
+    }
+}

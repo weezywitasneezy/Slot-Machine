@@ -1,0 +1,38 @@
+(function () {
+  const items = [
+    '🍭',
+    '❌',
+    '⛄️',
+    '🦄',
+    '🍌',
+    '💩',
+    '👻',
+    '😻',
+    '💵',
+    '🤡',    
+    '🦖',
+    '🍎',
+    '😂',
+    '🖕',
+  ];
+  const doors = document.querySelectorAll('.door');
+  
+  document.querySelector('#spinner').addEventListener('click', spin);
+  document.querySelector('#reseter').addEventListener('click', init);
+
+  function init(firstInit = true, groups = 1, duration = 1) {
+    for (const door of doors) {
+      if (firstInit) {
+        door.dataset.spinned = '0';
+      } else if (door.dataset.spinned === '1') {
+        return;
+      }
+
+      const boxes = door.querySelector('.boxes');
+      const boxesClone = boxes.cloneNode(false);
+      const pool = ['❓'];
+
+      if (!firstInit) {
+        const arr = [];
+        for (let n = 0; n < (groups > 0 ? groups : 1); n++) {
+          arr.push(...items);
